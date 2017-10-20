@@ -41,7 +41,7 @@ module.exports = {
         let seconds = parseInt(tmp[0]);
         let milliseconds = parseInt(tmp[1]);
 
-        return milliseconds + seconds * 60 + minutes * 60000;
+        return milliseconds + seconds * 1000 + minutes * 60000;
     },
 
     shiftZeros: function(time, zerosAmount){

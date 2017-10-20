@@ -17,4 +17,8 @@ test('make 4 as two digit value prefixed with zeroes', () => {
     expect(acleague.shiftZeros(4,2)).toBe('04');
 });
 
+test('string to ms', () => {
+    expect(acleague.timeStringToMilliseconds('02:02.849')).toBe(122849);
+});
+
 
